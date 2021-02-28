@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' type="text/css" href='/stylesheets/style.css' >
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css'>
+  
+  </head>
+  <body bgcolor="#033249">
+
+<%- include('partials/navContainer') %>
+
+<div class="container">
+    <!-- add contact partial page -->
+<div class="col-md-12">
+    <div class="col-md-12">
+      <h1 class="h1 text-warning text-center"><%=title%></h1>
+    </div>
+    <div class="col-md-12">
+        <div class="form-field"> 
+          <form style="text-align: start;" id="form" action="/contact-list/add" method="POST">
+            <div class="col-md-12 mb-3">
+              <label for="nameText" class="form-label">Name</label>
+              <input type="text" class="form-control" value="" name="name" id="nameText" placeholder="Name" required>
+            </div>
+            <div class="col-md-12 mb-3">
+              <label for="numberText" class="form-label">Contact Number</label>
+              <input type="number" class="form-control" value="" name="contact" id="numberText" placeholder="Contact Number" required>
+            </div>
+            <div class="col-md-12 mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" value="" name="email" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            </div>    
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-success"><i class="fas fa-plus"></i> Add Contact</button>
+              </div>
+            </div>
+            </form>
+        </div>
+    </div>
+  </div>
+    <%- include('partials/footerNav') %>
+</body>
+</html>

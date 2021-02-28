@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' type="text/css" href='/stylesheets/style.css' >
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css'>
+    
+  
+  </head>
+  <body >
+
+<%- include('partials/navContainer') %>
+
+<div class = "mainContainer">
+<img src = '/images/home.jpg' class="imgSize">
+<div class="justify-content centerAlign">
+<span> Solving daily challenges of SME 's and MSME 's in sales, analytics, management and financing domain, leveraging AI Tech.</span> 
+<br>
+<br>
+
+<form method="get" action="/about">
+   <button type="submit" class="btn btn-lg btn-dark buttonColor">About Me</button>
+</form>
+</div>
+<br>
+
+
+
+</div>
+
+
+<%- include('partials/footerNav') %>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' type="text/css" href='/stylesheets/style.css' >
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css'>
+  
+  </head>
+  <body bgcolor="#033249">
+
+<%- include('partials/navContainer') %>
+
+<div class="container">
+    <!-- add contact partial page -->
+<div class="col-md-12">
+    <div class="col-md-12">
+      <h1 class="h1 text-warning text-center"><%=title%></h1>
+    </div>
+              <div class="col-md-12">
+                  <div class="form-field"> 
+                    <form style="text-align: start;" id="form" action="/login" method="POST" autocomplete="off">
+                      <div class="col-md-12 mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Username" autofocus required>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                      </div>    
+                      <div class="row">
+                        <div class="col-md-12 text-center">
+                          <button type="submit" class="btn btn-success"><i class="fas fa-sign-in-alt"></i> Login</button>
+                          <a href="/">
+                            <input type="button" class="btn btn-warning" value="Cancel">
+                          </a>
+                        </div>
+                      </div>
+                      </form>
+                  </div>
+              </div>
+            </div>  
+          </div>
+          <%- include('partials/footerNav') %>
+      </body>
+      </html>

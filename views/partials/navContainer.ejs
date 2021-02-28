@@ -1,0 +1,25 @@
+ <link rel='stylesheet' href='/stylesheets/font-awesome-4.7.0/css/font-awesome.css'>
+
+<nav class="navbar navbar-expand-lg navbar-light top_bar">
+<img src="/images/sv_tech.jpg" height="100" width="200">
+<nav class="navbar toRight">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-right">
+
+	   <% for(var navIterator=0; navIterator < navItems.length; navIterator++) { %>
+   		<li class="nav-item active">
+        	<a class="nav-link" href="<%= navItems[navIterator].route %>"><%= navItems[navIterator].name %> 
+            <i class="<%= navItems[navIterator].font %>"> </i>
+
+          </a>
+      	</li>
+	
+	   <% } %>
+    </ul>
+    
+  </div>
+</nav>
+</nav>

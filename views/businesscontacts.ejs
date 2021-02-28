@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' type="text/css" href='/stylesheets/style.css' >
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css'>
+  
+  </head>
+  <body bgcolor="black">
+
+<%- include('partials/navContainer') %>
+
+<div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-12 text-center">
+                 <h1 class="text-warning">Business Contact List</h1>
+            </div>    
+            <div class="row text-center m-3" style="box-shadow: 1px 1px 5px 3px rgb(41 55 74); background-color: rgb(33 32 32);">
+                <table class="table text-white">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Contact Number</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <% if(ContactList.length == 0 ){%>
+                            <tr>
+                                <td colspan="5">No data to display</td>
+                            </tr>
+                        <%} %>
+        
+                        <% for(let count = 0; count<ContactList.length; count++ ){ %>
+                            <tr>
+                                <td><%= ContactList[count].name %></td>
+                                <td><%= ContactList[count].contact_number %></td>
+                                <td><%= ContactList[count].email%></td>
+                                <td>
+                                    <a href="/edit/<%= ContactList[count]._id %>" class="btn btn-primary">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="/delete/<%= ContactList[count]._id %>" class="btn btn-danger">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        <%}%>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="/add" class="btn btn-success">
+                        <i class="fas fa-user-plus"></i> Add New Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<%- include('partials/footerNav') %>
+
+  </body>
+</html>
+
+
+
+
+</div>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' type="text/css" href='/stylesheets/style.css' >
+  	<link rel='stylesheet' href='/stylesheets/bootstrap.min.css'>
+  
+  </head>
+  <body bgcolor="black">
+
+<%- include('partials/navContainer') %>
+
+<center class="contents">
+  <p class='textColor'> Services </p>
+</center>
+
+
+<div class="container">
+
+<div class="row content row justify-content-md-center">
+<div class="col-md-3 card cardShadow">
+  <img src="/images/blog-01.jpg" class="resizeImg">
+  <div class='card-body'>
+    <center>
+      <h4 class="card-title textcardColor">Machine Learning</h4>
+
+      <p class="card-text textcardColor"> Keras | Tensorflow | Pytorch </p>
+  </center>
+  </div>
+</div>
+<div class="col-md-3 card cardShadow">
+  <img src="/images/analysis.jpg" class="resizeImg">
+  <div class='card-body'>
+    <center>
+      <h4 class="card-title textcardColor">Analytics</h4>
+   
+      <p class="card-text textcardColor"> Big Data | Scikit Learn | PySpark</p>
+   </center>
+  </div>
+</div>
+<div class="col-md-3 card cardShadow">
+  <img src="/images/web_scrapping.jpg" class="resizeImg">
+  <div class='card-body'>
+    <center>
+      <h4 class="card-title textcardColor">Web Scraping</h4>
+
+      <p class="card-text textcardColor"> Selenium | Beautiful Soup </p>
+   </center>
+  </div>
+</div>
+</div> 
+
+</div>
+
+<%- include('partials/footerNav') %>
+
+</html>

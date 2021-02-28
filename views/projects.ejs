@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' type="text/css" href='/stylesheets/style.css' >
+  	<link rel='stylesheet' href='/stylesheets/bootstrap.min.css'>
+  
+  </head>
+  <body bgcolor="black">
+
+<%- include('partials/navContainer') %>
+
+<center class="contents">
+  <p class='textColor'> Projects </p>
+</center>
+
+
+<div class="container">
+
+<div class="row content row justify-content-md-center">
+<div class="col-md-3 card cardShadow ">
+  <img src="/images/analysis.jpg" class="resizeImg">
+  <div class='card-body'>
+   
+      <h4 class="card-title textcardColor">Non-Card lending Xcell Analytics</h4>
+
+      <p class="card-text textcardColor"> The aim was to create and streamline the existing campaign execution process using python/sql as technologies for relaunch of marketing campaign post Covid. </p>
+  
+  </div>
+</div>
+<div class="col-md-3 card cardShadow">
+  <img src="/images/blog-01.jpg" class="resizeImg">
+  <div class='card-body'>
+    <center>
+      <h4 class="card-title textcardColor">Business Prospect and Data Enrichment</h4>
+   
+      <p class="card-text textcardColor"> The aim was to provide authentic information of prospects for sails team to maximize the conversion rate of prospects.</p>
+   </center>
+  </div>
+</div>
+<div class="col-md-3 card cardShadow">
+  <img src="/images/pdf_to_text.png" class="resizeImg">
+  <div class='card-body'>
+    <center>
+      <h4 class="card-title textcardColor">File Classification on Basis of Content</h4>
+
+      <p class="card-text textcardColor"> The aim was to develop a AI powered tool which automatically extracts the information stored in multiple pdf into a structured excel format sheet. </p>
+   </center>
+  </div>
+</div>
+</div> 
+
+</div>
+
+<%- include('partials/footerNav') %>
+  </body>
+</html>
