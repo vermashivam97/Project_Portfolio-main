@@ -14,6 +14,8 @@ module.exports = function (passport) {
           username: username,
         }).then((user) => {
           console.log(user.username);
+          console.log(user.password);
+          console.log(password);
           if (!user) {
             console.log('not user..');
             return done(null, false, {
